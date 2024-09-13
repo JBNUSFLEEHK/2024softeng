@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import simpledialog
 
 
-def f2c(temp_f: float) -> float:  #"_"사용 이유와 "float -> 화살표 이건 또 뭔데 float" 무슨 의미 인건지 ?
+def f2c(temp_f: float) -> float:  
     return (temp_f-32)*5/9
 
 
