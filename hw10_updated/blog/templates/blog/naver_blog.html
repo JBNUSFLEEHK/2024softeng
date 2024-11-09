@@ -1,0 +1,22 @@
+{% extends './layout.html' %}
+
+{% block content %}
+<h1>나의 Blog</h1>
+
+<hr>
+
+<h2>이런!!!ㅠㅠ</h2>
+
+<p>네이버 블로그 계정은 존재하지만 현재 활동하고 있지 않습니다.</p>
+<p>나중에 기회가 된다면 블로그도 해보도록 하겠습니다.
+추억으로 남길 수 있으니까요~</p>
+
+<hr>
+
+<h3><a href="https://blog.naver.com/hkyulee2002">네이버 블로그 방문하기<i class="fa-solid fa-link"></i></a></h3>
+
+<hr>
+
+<a href="{% url 'blog:index' %}" class="home-link">첫 화면으로 가기<i class="fa-solid fa-house"></i></a>
+
+{% endblock %}
