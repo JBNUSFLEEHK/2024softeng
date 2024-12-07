@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% extends 'blog/base_full_width.html' %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{% block head_title %}Create Post - Blog{% endblock %}
+</head>
+<body>
+{% block main_area %}
+    <h1>Create New Post</h1>
+    <hr/>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <table>
+        {{  form }}
+        <tr>
+            <th><lable for="id_tags_str">Tags:</lable></th>
+            <td><input type="text" name="tags_str" id="id_tags_str"></td>
+        </tr>
+
+        </tr>
+    </table>
+    <button type="submit" class="btn btn-primary float-right">Submit</button>
+</form>
+{% endblock %}
+</body>
+</html>
+
+
+
+

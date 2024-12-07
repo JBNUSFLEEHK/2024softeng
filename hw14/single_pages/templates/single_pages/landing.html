@@ -1,0 +1,26 @@
+{% extends './layout.html' %}
+{% load static %}
+
+{% block content %}
+<h1>이현규 공간의</h1>
+
+<button onclick="whatTimeIsIt()">현재시간<i class="fa-solid fa-clock"></i>은?</button>
+<script type="text/javascript" src="{% static 'single_pages/what_time_is_it.js' %}"></script>
+<hr>
+
+<img src="{% static 'single_pages/images/jbnu.jpg' %}" width="300px">
+<h3><a href="https://www.jbnu.ac.kr/kor/">Go to JBNU home page<i class="fa-solid fa-link"></i></a></h3>
+<p>안녕하세요. 전북대학교 스마트팜학과 21학번 이현규입니다. 반갑습니다.</p>
+<h3>-----위 파란색 칸 항목 중에 알아보고 싶으신 번호를 클릭하셔서 들어가시면 됩니다.-----</h3>
+
+<hr>
+
+<p>아래 링크는 저의 git hub 저장소입니다. 부족하지만 열심히 노력해보겠습니다.</p>
+<h3><a href="https://github.com/JBNUSFLEEHK?tab=repositories">Go to GitHub page<i class="fa-solid fa-link"></i></a></h3>
+
+<hr>
+
+<img src="{% static 'single_pages/images/smartfarm_image.jpg' %}" width="300px">
+
+<script type="text/javascript" src="{% static 'blog/js/what_time_is_it.js' %}"></script>
+{% endblock %}
